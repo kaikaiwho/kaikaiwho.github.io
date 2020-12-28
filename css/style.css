@@ -203,13 +203,12 @@ body {
 #footer {
   background-color: #4c55d4;
   width: 100%;
-  box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.1); }
-  #footer .support {
-    text-align: center;
-    line-height: 64px; }
-    #footer .support span {
-      color: #ddd;
-      display: inline-block; }
+  box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px; }
+  #footer .support, #footer .visitedNum {
+    text-align: center; }
+    #footer .support span, #footer .visitedNum span {
+      color: #ddd; }
 
 .author_info {
   position: relative;
