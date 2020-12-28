@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+html, body, .container {
+  height: 100%; }
+
+body {
+  background-color: #f2f2f2;
+  font: 16px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  line-height: 1.5em; }
+
+.container {
+  max-width: 1770px;
+  margin: 0 auto; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.outer {
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex; }
+  .outer .main {
+    width: 100%; }
+
+#left {
+  margin: 20px 0; }
+
+#header {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+  #header a {
+    color: #565a5f; }
+    #header a:hover {
+      color: #1a218a; }
+  #header #header-main {
+    height: 100%;
+    margin: 0 auto; }
+    #header #header-main .outer {
+      height: 100%; }
+    #header #header-main .blog-title {
+      display: block;
+      margin: 0 15px;
+      float: left; }
+    #header #header-main .navbar {
+      float: left; }
+      #header #header-main .navbar ul {
+        display: flex; }
+        #header #header-main .navbar ul li {
+          margin: 0 15px; }
+
+.posts {
+  padding: 0 0 0 20px; }
+  .posts .post {
+    background-color: #fff;
+    border: #ddd solid 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+    .posts .post .post-title {
+      font-size: 1.7em;
+      margin-bottom: 10px; }
+      .posts .post .post-title .post-title-link {
+        color: #565a5f; }
+    .posts .post .post-meta {
+      margin-top: 10px;
+      color: #999999; }
+
+.post {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px; }
+
+.page-nav {
+  text-align: center;
+  margin-bottom: 20px; }
+  .page-nav a {
+    color: #999; }
+  .page-nav .page-number {
+    width: 30px; }
+  .page-nav .extend {
+    width: 60px; }
+  .page-nav .page-number .extend {
+    display: inline-block;
+    height: 30px;
+    margin: 0 5px;
+    line-height: 30px; }
+    .page-nav .page-number .extend:hover {
+      background-color: #4c55d4; }
+  .page-nav .current {
+    color: #4c55d4; }
+
+footer {
+  background-color: #4c55d4;
+  width: 100%;
+  height: 250px; }
+
+.author_info {
+  position: relative;
+  width: 300px;
+  text-align: center;
+  padding-bottom: 100px;
+  color: #565a5f; }
+  .author_info .logo {
+    width: 300px;
+    height: 300px;
+    background-image: url("images/QR_CODE.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 200px; }
+
+.blogState {
+  margin-top: 20px;
+  display: flex;
+  text-align: center; }
+  .blogState .stateBox {
+    padding: 20px;
+    margin: 0 auto;
+    color: #565a5f; }
+    .blogState .stateBox .num {
+      color: #4c55d4; }
+
+.category {
+  margin: 20px 0;
+  position: relative;
+  width: 300px;
+  height: 800px; }
+
+.author_info, .blogState, .category {
+  background-color: #fff;
+  border: #ddd solid 1px;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
+
+.archive {
+  background-color: #fff;
+  border: #ddd solid 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  margin: 20px 0 20px 20px; }
+  .archive .post-archive {
+    padding: 50px 100px; }
+    .archive .post-archive .post-item .post-date {
+      font-size: 2em;
+      color: #4c55d4;
+      font-weight: 700;
+      line-height: 2em; }
+      .archive .post-archive .post-item .post-date::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #ddd; }
+    .archive .post-archive .post-item .post-title {
+      text-indent: 1.5em;
+      font-size: 1.5em;
+      line-height: 2em; }
+      .archive .post-archive .post-item .post-title:link, .archive .post-archive .post-item .post-title:visited, .archive .post-archive .post-item .post-title:hover, .archive .post-archive .post-item .post-title:active {
+        color: #000; }
