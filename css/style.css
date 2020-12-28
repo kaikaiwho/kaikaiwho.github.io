@@ -200,11 +200,16 @@ body {
   .page-nav .current {
     color: #4c55d4; }
 
-footer {
+#footer {
   background-color: #4c55d4;
   width: 100%;
-  height: 250px;
   box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.1); }
+  #footer .support {
+    text-align: center;
+    line-height: 64px; }
+    #footer .support span {
+      color: #ddd;
+      display: inline-block; }
 
 .author_info {
   position: relative;
