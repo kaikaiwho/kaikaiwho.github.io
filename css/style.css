@@ -288,8 +288,7 @@ body {
   border: #ddd solid 1px;
   box-sizing: border-box;
   border-radius: 5px;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-  margin: 20px 0 20px 20px; }
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
   .archive .post-archive {
     padding: 50px 100px; }
     .archive .post-archive .post-item .post-date {
