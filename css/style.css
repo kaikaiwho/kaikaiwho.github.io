@@ -25,16 +25,21 @@ body {
   display: block;
   clear: both; }
 
-.outer {
+#outer {
   max-width: 1770px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex; }
-  .outer .main {
-    width: 100%; }
+  #outer .main {
+    width: 100%;
+    margin: 20px 0; }
 
 #left {
-  margin: 20px 0; }
+  margin: 20px 20px 20px 0; }
+
+@media screen and (max-width: 768px) {
+  #left {
+    display: none; } }
 
 #header {
   display: block;
@@ -63,24 +68,26 @@ body {
         #header #header-main .navbar ul li {
           margin: 0 15px; }
 
-.posts {
-  padding: 0 0 0 20px; }
-  .posts .post {
-    background-color: #fff;
-    border: #ddd solid 1px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
-    .posts .post .post-title {
-      font-size: 1.7em;
-      margin-bottom: 10px; }
-      .posts .post .post-title .post-title-link {
-        color: #565a5f; }
-    .posts .post .post-meta {
-      margin-top: 10px;
-      color: #999999; }
+.posts .post {
+  background-color: #fff;
+  border: #ddd solid 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; }
+  .posts .post:last-child {
+    margin-bottom: 0; }
+  .posts .post .post-title {
+    font-size: 1.7em;
+    margin-bottom: 10px; }
+    .posts .post .post-title .post-title-link {
+      color: #565a5f; }
+      .posts .post .post-title .post-title-link:hover {
+        color: #4c55d4; }
+  .posts .post .post-meta {
+    margin-top: 10px;
+    color: #999999; }
 
 #article {
   display: block;
@@ -116,15 +123,14 @@ body {
   #article h6 {
     line-height: 40px;
     margin: 20px 0 15px;
-    border-bottom: 1px solid #ddd;
     padding-bottom: 10px; }
-  #article h1, #article .title {
+  #article .title {
     font-size: 32px;
     font-weight: 900;
     border-bottom: #4c55d4 3px solid; }
   #article h2 {
     font-size: 25px;
-    padding-left: 10px; }
+    border-bottom: 1px solid #ddd; }
   #article h3 {
     font-size: 22px; }
   #article a {
@@ -141,13 +147,18 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px #999; }
+    box-shadow: 0px 0px 8px #999;
+    display: block;
+    margin: auto; }
   #article pre {
     font-size: 14px;
     margin: 20px 0 15px; }
   #article p {
     margin: 0 0 10px;
     line-height: 30px; }
+  #article blockquote {
+    border-left: 3px #d47f87 solid;
+    padding-left: 20px; }
   #article table {
     width: 100%;
     border: 0;
@@ -237,6 +248,9 @@ body {
 .category {
   position: relative;
   width: 300px; }
+  .category .title {
+    padding: 20px 20px 0 20px;
+    color: #565a5f; }
   .category .category-list-item {
     padding: 20px;
     display: flex;
@@ -244,6 +258,8 @@ body {
     .category .category-list-item .category-list-link {
       display: block;
       color: #565a5f; }
+      .category .category-list-item .category-list-link:hover {
+        color: #4c55d4; }
     .category .category-list-item .category-list-count {
       display: block;
       color: #ddd;
@@ -254,6 +270,11 @@ body {
 
 .tagCloud {
   padding: 20px; }
+  .tagCloud .title {
+    color: #565a5f;
+    padding-bottom: 20px; }
+  .tagCloud a {
+    color: #4c55d4; }
 
 .author_info, .blogState, .category, .tagCloud, .board {
   background-color: #fff;
@@ -286,5 +307,7 @@ body {
       text-indent: 1.5em;
       font-size: 1.5em;
       line-height: 2em; }
-      .archive .post-archive .post-item .post-title:link, .archive .post-archive .post-item .post-title:visited, .archive .post-archive .post-item .post-title:hover, .archive .post-archive .post-item .post-title:active {
+      .archive .post-archive .post-item .post-title:link, .archive .post-archive .post-item .post-title:visited, .archive .post-archive .post-item .post-title:active {
         color: #000; }
+      .archive .post-archive .post-item .post-title:hover {
+        color: #4c55d4; }
